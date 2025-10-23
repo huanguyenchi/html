@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+    <meta charset="UTF-8">
+    <title> Đăng Ký Thành Viên</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <style>
+       body {
+      font-family: Arial, sans-serif;
+    }
+    header, footer {
+      background-color: #f2f2f2;
+      padding: 10px;
+      text-align: center;
+    }
+    fieldset {
+      width: 500px;
+      margin: 20px auto;
+      border: 2px solid #ccc;
+      padding: 20px;
+    }
+    legend {
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    table {
+      width: 100%;
+    }
+    td {
+      padding: 8px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="file"] {
+      width: 100%;
+      padding: 5px;
+    }
+    .actions {
+      text-align: center;
+    }
+ 
+    </style>
+    </head>
+    <body>
+        
+        <header>
+            <a href="dangky.html">
+            <img src="images/logo.png" alt="" >
+            </a>
+
+            <nav>
+               <ul style="list-style: none; display: flex; gap: 25px; margin: 0; padding: 0;">
+            <li><a href="trangchu.html" >Trang Chủ</a></li>
+            <li><a href="gioithieu.html" >Giới Thiệu</a></li>
+            <li><a href="sanpham.html" >Sản Phẩm</a></li>
+            <li><a href="tintuc.html" >Tin Tức</a></li>
+            <li><a href="dangnhap.html" >Đăng Nhập</a></li>
+            <li><a href="dangky.html" >Đăng Ký</a></li>
+            <li><a href="lienhe.html" >Liên Hệ</a></li>
+        </ul>
+            </nav> 
+        </header>
+        <main>
+            <form method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Đăng Ký</legend>
+        <table>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="text" id="email" name="email" placeholder="Vui lòng nhập email"></td>
+          </tr>
+          <tr>
+            <td><label for="psw">Mật khẩu:</label></td>
+            <td><input type="password" id="psw" name="psw" placeholder="Vui lòng nhập mật khẩu"></td>
+          </tr>
+          <tr>
+            <td><label for="psw2">Nhập lại mật khẩu:</label></td>
+            <td><input type="password" id="psw2" name="psw2" placeholder="Vui lòng nhập mật khẩu"></td>
+          </tr>
+          <tr>
+            <td><label>Cấp độ thành viên:</label></td>
+            <td>
+              <input type="radio" id="bac" name="memberType" value="Bạc">
+              <label for="bac">Bạc</label><br>
+              <input type="radio" id="vang" name="memberType" value="Vàng">
+              <label for="vang">Vàng</label><br>
+              <input type="radio" id="bachkim" name="memberType" value="Bạch Kim">
+              <label for="bachkim">Bạch Kim</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="avatar">Ảnh đại diện:</label></td>
+            <td><input type="file" id="avatar" name="avatar"></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="checkbox" id="agree" name="agree">
+              <label for="agree">Tôi đồng ý với Điều khoản & Quyền riêng tư của chúng tôi.</label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="actions">
+              <input type="reset" value="Hủy">
+              <input type="submit" value="Đăng Ký">
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+
+        </main>
+        <footer>
+            <div>
+                <p>&copy; 2021 Bản quyền thuộc về FreezeVN
+                <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+                <a href="https://www.twitter.com" target="_blank">Twitter</a> |
+                <a href="https://www.pinterest.com" target="_blank">Pinterest</a>
+                <a href="#logo"> Về Đầu Trang</a>
+                </p>
+            </div>
+         </footer>  
+    </body>
+
+</html>

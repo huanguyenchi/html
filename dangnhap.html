@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <title>Trang chủ</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <header class="header">
+          <a href="trangchu.html">
+            <img src="images/logo.png" alt="" >
+          </a>  
+        
+            <nav>
+            <ul style="list-style: none; display: flex; gap: 25px; margin: 0; padding: 0;">
+            <li><a href="trangchu.html" >Trang Chủ</a></li>
+            <li><a href="gioithieu.html" >Giới Thiệu</a></li>
+            <li><a href="sanpham.html" >Sản Phẩm</a></li>
+            <li><a href="tintuc.html" >Tin Tức</a></li>
+            <li><a href="dangnhap.html" >Đăng Nhập</a></li>
+            <li><a href="dangky.html" >Đăng Ký</a></li>
+            <li><a href="lienhe.html" >Liên Hệ</a></li>
+        </ul>
+            </nav>
+        </header>
+        <main>
+            <form action="xulydangnhap.php" method="post" enctype="application/x-www-form-urlencoded">
+      <fieldset>
+        <legend>Đăng Nhập</legend>
+        <table>
+          <tr>
+            <td colspan="2" style="text-align: center;">
+              <img src="images/dangnhap/userlogin.png" alt="User Icon">
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="text" id="email" name="email" placeholder="Nhập email"></td>
+          </tr>
+          <tr>
+            <td><label for="psw">Mật khẩu:</label></td>
+            <td><input type="password" id="psw" name="psw" placeholder="Nhập mật khẩu"></td>
+          </tr>
+          
+          <tr>
+            <td colspan="2" style="text-align: center;">
+              <input type="submit" value="Đăng Nhập">
+              <input type="reset" value="Hủy">
+              <br>
+              <a href="quenmatkhau.html">Bạn quên Mật Khẩu?</a>
+              <tr>
+            <td colspan="2">
+              <input type="checkbox" id="remember" name="remember">
+              <label for="remember">Ghi nhớ cho lần đăng nhập sau</label>
+            </td>
+          </tr>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+
+        </main>
+        <footer>
+            <div>
+                <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+                <a href="https://www.twitter.com" target="_blank">Twitter</a> |
+                <a href="https://www.pinterest.com" target="_blank">Pinterest</a>
+                <a href="#logo"> Về Đầu Trang</a>
+            </div>
+            
+        </footer>
+    </body>
+</html>
